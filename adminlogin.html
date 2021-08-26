@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="loginan.css">
+</head>
+<body>
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="adminlogin.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="profile.png" alt="PMS" class="PMS">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>ADMIN</b></label><br>
+      <input id="email" type="text" placeholder="Enter Username" name="uname" required><br>
+<br>
+      <label for="psw"><b>Password</b></label><br>
+      <input id="pass" type="password" placeholder="Enter Password" name="psw" required><br>
+        
+      <button type="submit">Login</button>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Customer? <a href="login.html">Login here!</a></span>
+    </div>
+  </form>
+</div>
+</body>
+</html>

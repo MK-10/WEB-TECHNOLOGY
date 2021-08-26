@@ -1,0 +1,95 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+input[type=text], input[type=password] {
+
+  width: 50%;
+  padding: 15px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid firebrick;
+  box-sizing: border-box;
+}
+button {
+
+  background-color: gray;
+  color: white;
+  padding: 10px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: auto;
+}
+button:hover {
+  opacity: 0.1;
+}
+.cancelbtn {
+  width: auto;
+  padding: 10px 20px;
+  background-color: green;
+}
+.imgcontainer {
+  padding-left : 200px;
+  margin: 25px 0 25px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+  
+}
+
+span.psw {
+  float: right;
+
+}
+.modal {
+  display: none; 
+  z-index: 1;
+  left: 10;
+  top: 10;
+  width: 50%; 
+  height: 200%; 
+  overflow: auto; 
+  padding-top: 60px;
+  
+}
+body {
+  background-image: url('constructionworkers_reduced.jpg');
+background-repeat: no-repeat;
+  background-size: cover;
+}
+.modal-content {
+  background-color: lightblue;
+  height : 200%;
+  width : 50%;
+  margin-top: 0;
+margin-right: auto;
+margin-bottom: 0;
+margin-left: auto;
+  border: 1px solid #888;
+  width: 80%;
+  
+}
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+@media screen and (max-width: 500px) {
+  span.psw {
+	  
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
