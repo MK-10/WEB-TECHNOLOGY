@@ -3,7 +3,7 @@
     $username=$_POST['uname'];
     $password=$_POST['psw'];
     $repeatpass=$_POST['psw-repeat'];
-    $conn= new mysqli('localhost','root','','construct');
+    $conn= new mysqli('localhost','root','','construction');
     if($conn->connect_error){
         die('connection failed: '.$conn->connect_error);
     }

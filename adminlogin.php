@@ -1,7 +1,7 @@
 <?php
     $email=$_POST['uname'];
     $password=$_POST['psw'];
-    $conn= new mysqli('localhost','root','','construct');
+    $conn= new mysqli('localhost','root','','construction');
     if($conn->connect_error){
         die('connection failed: '.$conn->connect_error);
     }

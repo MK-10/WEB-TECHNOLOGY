@@ -1,12 +1,12 @@
 <?php
     $conn= new mysqli('localhost','root','','construction');
-    $query="select * from register";
+    $query="select * from adminorder";
     $result=mysqli_query($conn,$query);
 ?>
-
 <doctype html!>
 <html>
 <head>
+<title>admin order</title>
 <link rel="stylesheet" href="navi.css">
 </head>
 
@@ -43,8 +43,9 @@
             table th{
                 color:green;
             }
-			h1{color : black;
-			}
+			h1{color: black;
+		
+			background : none;}
             h2{
 				background: white;
 				width : 200px;
@@ -54,7 +55,7 @@
   padding-top: -60px;
 				text-align: center;
             }
-		
+			
 footer{
     background: black scroll no-repeat center;
     padding: 20px;
@@ -63,34 +64,61 @@ footer{
     color: rgb(102, 123, 138);
     text-align: center;
 }
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: black;
+  color: white;
+  padding: 16px 20px;
+  text-align: center;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
         </style>
         <header>
             <h1>GLOBAL PAINTS</h1>
             <br>
         </header>
         <section id="dealer">
-            <h2>Dealer Details</h2>
+            <h2>Dealer orders</h2>
             <table style="background-color:#FFFFE0;">
                 <tr>
+					<th>id</th>
                     <th>Name</th>
                     <th>Shop Name</th>
-                    <th>Address</th>
-                    <th>Contact</th>
+                    <th>material</th>
+                    <th>quantity</th>
+					<th>price(in Rs.)</th>
                 </tr>
                     <?php
                     while($rows=mysqli_fetch_assoc($result)){
                         ?>
                     <tr>
+					<td><?php echo $rows['id'] ?></td>
                         <td><?php echo $rows['name'] ?></td>
                         <td><?php echo $rows['shopname'] ?></td>
-                        <td><?php echo $rows['address'] ?></td>
-                        <td><?php echo $rows['contact'] ?></td>
+                        <td><?php echo $rows['mat'] ?></td>
+                        <td><?php echo $rows['quan'] ?></td>
+						<td><?php echo $rows['value'] ?></td>
                     </tr>
                         <?php
                     }
                     ?>    
             </table>
-
+<div >
+<a type="submit" class="registerbtn" href="dispatch.php">dispatch</a>
+            </div>
         </section>
 		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         <footer>

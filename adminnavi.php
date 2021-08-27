@@ -1,6 +1,7 @@
 <doctype html!>
 <html>
 <head>
+<title>admin home</title>
 <link rel="stylesheet" href="navi.css">
 </head>
 

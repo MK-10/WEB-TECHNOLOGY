@@ -4,7 +4,7 @@
     $shopname=$_POST['shopname'];
     $address=$_POST['address'];
     $contact=$_POST['contact'];
-    $db= new mysqli('localhost','root','','construct');
+    $db= new mysqli('localhost','root','','construction');
     if($db->connect_error){
         die('connection failed: '.$db->connect_error);
     }

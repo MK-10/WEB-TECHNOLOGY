@@ -1,6 +1,7 @@
 <doctype html!>
 <html>
 <head>
+<title>home</title>
 <link rel="stylesheet" href="navi.css">
 </head>
 
@@ -10,7 +11,7 @@
 	<a href="#1" font-family: CopperplateGothicBold;>About</a>
 	<a href="#2" font-family: CopperplateGothicBold;>contact us</a>
 	<a href="register.html" font-family: CopperplateGothicBold;>Register</a>
-	<a href="order.php" font-family: CopperplateGothicBold;>order</a>
+	<a href="orders.php" font-family: CopperplateGothicBold;>order</a>
 </div>
 <br>
 </body>
@@ -110,7 +111,7 @@ footer{
 <br>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <footer>
-<h4>FOR ADMIN</h4>
+<h4>FOR Dealer</h4>
 <h4>To manage product</h4>
 <p>All rights reserved &copy; 2021</p>
 </footer>

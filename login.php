@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title>login</title>
 <link rel="stylesheet" href="loginan.css">
 </head>
 <body>
@@ -42,7 +43,7 @@
 <?php
     $email=$_POST['uname'];
     $password=$_POST['psw'];
-    $conn= new mysqli('localhost','root','','construct');
+    $conn= new mysqli('localhost','root','','construction');
 	$_SESSION['user']=$email;
     if($conn->connect_error){
         die('connection failed: '.$conn->connect_error);
